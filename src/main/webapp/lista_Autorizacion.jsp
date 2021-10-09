@@ -92,7 +92,7 @@
             <a href="index.jsp">
                 <button type="button" class="btn-primary"><h4>Regresar</h4></button>
             </a>-->
-        </div><p></p>
+        </div>
         <% //} %>
     </body>
 </html>
