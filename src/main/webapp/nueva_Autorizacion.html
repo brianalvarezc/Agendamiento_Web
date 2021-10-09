@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nueva Autorizacion</title> 
+        <!-- ////////////////////// BOOTSTRAP HREF /////////////////////////////////-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div class="container" align="center">
+            <h2>Nueva Autorizacion</h2>
+        </div>
+        <div class="container">
+            <form class="form-horizontal" method="GET" action="recibido_Autorizacion.jsp">
+            <fieldset>
+
+            <!-- Form Name -->
+            <legend>Complete los campos</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="autorizacion_Paciente_Id">Id del Paciente</label>  
+              <div class="col-md-4">
+              <input id="autorizacion_Paciente_Id" name="autorizacion_Paciente_Id" type="text" placeholder="-" class="form-control input-md" required="">
+              <!--<span class="help-block">help</span>-->  
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="autorizacion_Entidad_Id">Id de la Entidad</label>  
+              <div class="col-md-4">
+              <input id="autorizacion_Entidad_Id" name="autorizacion_Entidad_Id" type="text" placeholder="-" class="form-control input-md" required="">
+              <!--<span class="help-block">help</span>--> 
+              </div>
+            </div>
+
+            <!-- Date input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="autorizacion_Fecha">Fecha</label>  
+              <div class="col-md-4">
+              <input id="autorizacion_Fecha" name="autorizacion_Fecha" type="date" class="form-control input-md" required="">
+              <!--<span class="help-block">help</span>-->  
+              </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="autorizacion_Estado_Id">Estado</label>
+              <div class="col-md-4">
+                <select id="autorizacion_Estado_Id" name="autorizacion_Estado_Id" class="form-control">
+                  <option value="1">Habilitado</option>
+                  <option value="2">Deshabilitado</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="enviarA"></label>
+              <div class="col-md-4">
+                <button id="enviarA" name="enviarA" class="btn btn-primary">Crear</button>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>
+
+            <div class="form-group" >
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4">
+                    <a href="lista_Autorizacion.jsp">
+                        <button id="Cancelar" name="Cancelar" class="btn btn-primary">Cancelar</button>
+                    </a>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

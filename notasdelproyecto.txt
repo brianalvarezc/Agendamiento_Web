@@ -1,0 +1,15 @@
+- Crear la base de datos para saber con qué trabajar
+- Crear el proyecto y subirlo a GitHub. En caso de no funcionar correctamente el GitHub Desktop, si sale en pantalla negra se puede modificar en su acceso directo agregándole al final la instrucción --disable-gpu
+- Descargar el conector de MySQL desde https://mvnrepository.com/ buscando "MySQL connector" y escogen el de la versión de MySQL que están usando.
+- Descargar también la dependencia TestNG para las pruebas unitarias y progresivas. Se escoge el que más hayan descargado o el último.
+
+- Creación de la pantalla de login, solo lo visual.
+- Crear la conexión del proyecto con la base de datos MySQL. Se usa mariaDB y su respectivo conector, se busca en Maven la versión 3.0.0 y se cambian los String en la clase ConexionBD "jdbc:mysql:" por "jdbc:mariadb:", se deja sin contraseña el usuario root y la ubicacion del driver cambia de "com..mysql.jdbc.Driver" pasa a "org.mariadb.jdbc.Driver" de resto todo igual.
+- Se crean todos los objetos de acceso a datos DAO para cada objeto
+- Se crean todos las colecciones que son objetos de tipo ArrayList para tener las colecciones de cada objeto en una estructura iterable
+- Se crea el archivo .jsp para la codificación con HTML y java en el mismo archivo.
+- Completando lo anterior se ha completado la R de CRUD
+
+Para la C de CRUD, Create, se usa un formulario en HTML
+- Capturar los datos de entrada del usuario que puede crear dicho objeto o entidad del sistema usando el método POST para protección de los datos
+- 
