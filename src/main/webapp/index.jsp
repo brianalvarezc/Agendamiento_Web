@@ -21,7 +21,7 @@
 
             <!-- Icon -->
             <div class="fadeIn first">
-              <img src="imagenes\logologin.png" id="icon" alt="User Icon" />
+              <img src="imagenes\logologin.png" id="icon" alt="Login Icon" />
             </div>
 
             <!-- Login Form -->
