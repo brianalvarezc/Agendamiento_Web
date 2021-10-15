@@ -25,15 +25,7 @@
         
     </head>
     <body>
-        <!-- ---------------- Recibiendo el login ---------------- -->
-        <%
-        String user = request.getParameter("user");
-        String password = request.getParameter("password");
-        
-        //if(user == "admin" && password == "admin"){
-        %>
-        
-        
+
         <div class="container"; align="center">
             <h2>Autorizaciones</h2>
         </div>

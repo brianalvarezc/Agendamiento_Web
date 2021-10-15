@@ -58,7 +58,7 @@
           <% } %>
               
         <div class="container" align="center">
-            <a href="lista_Autorizacion.html">
+            <a href="lista_Autorizacion.jsp">
                 <button type="button" class="btn-primary"><h4>Volver</h4></button>
             </a>
         </div>
