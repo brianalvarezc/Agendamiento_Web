@@ -13,28 +13,31 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Iniciar sesión</title>
     </head>
-    <body>
-        <div  align="center"; style="border: 1px outset blue; margin-top: 5%; width: 50%; height: 50%; margin-left: 30%; margin-right: 30%">
-            <!-- Icon -->
-            <div>
-              <img src="imagenes\logologin.png" id="icon" alt="Login Icon" />
-            </div>
+    <body style="background-image: url(imagenes/fondobodyindex.jpg);">
+        <div align="center" style="padding: 1%;">
+            <div  align="center"; style="border: 1px outset blue; box-shadow: 5px 10px #cccccc; padding: 20px; width: 400px; background-color: #ffffff;">
+                <!-- Icon -->
+                <div>
+                  <img src="imagenes\logologin.png" id="icon" alt="Login Icon" />
+                </div>
 
-            <!-- Login Form -->
-            <div>
-                <form class="form" method="post" action="inicio.jsp">
-                    <div><input class="text" id="user" class="fadeIn second" name="user" placeholder="User"></div>
-                    <div><input class="text" type="password" id="password" class="fadeIn third" name="password" placeholder="Password"></div>
-                    <div><input type="submit" class="btn-primary" value="LogIn"></div>
-                </form>
-            </div>
+                <!-- Login Form -->
+                <div style="width: 400px">
+                    <form class="form" method="post" action="inicio.jsp">
+                        <div><input class="text" type="text" id="user" name="user" placeholder="User"></div>
+                        <div><input class="text" type="password" id="password" name="password" placeholder="Password"></div>
+                        <div><input type="submit" value="LogIn" style="background-color: #39ace7; width: 30%; "></div>
+                    </form>
+                </div>
 
-            <!-- Remind Passowrd -->
-            <div>
-              <a href="#">Olvidaste la contraseña?</a>
-            </div>
-
-          </div>
+                <!-- Remind Passowrd -->
+                <div>
+                  <a href="#">Olvidaste la contraseña?</a>
+                </div>
+                <div>
+                  <a href="#">Registrate</a>
+                </div>
+              </div>
         </div>
     </body>
 </html>
