@@ -24,11 +24,11 @@
   </head>
     <body>
 
-        <div align="center">
+        <div class="container-fluid p-2 bg-secondary text-white text-center">
             <h2>Autorizaciones</h2>
         </div>
-        <div>
-            <table class="table table-striped">
+        <div class="container">
+            <table class="table">
                 <thead>
                   <tr>
                     <td width="15%">Autorizacion ID</td>
@@ -60,18 +60,19 @@
                     
                     <%}%>
                 </tbody>
-                    
             </table>
-        </div>
-        <div class="container" align="center">
-            <a href="nueva_Autorizacion.html">
-                <button type="button" class="btn-primary"><h4>Crear</h4></button>
-            </a>
-        </div>
-        <div class="container" align="center">
-            <a href="index.jsp">
-                <button type="button" class="btn-primary"><h4>Salir</h4></button>
-            </a>
+            <div class="row" align="center">
+                <div class="col">
+                    <a href="nuevaAutorizacion.jsp">
+                        <button>Crear</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="index.jsp">
+                        <button>Salir</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </body>
 </html>

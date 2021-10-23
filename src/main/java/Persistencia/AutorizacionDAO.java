@@ -59,10 +59,7 @@ public class AutorizacionDAO {
         // Se concatena la instruccion de INSERT
         String sql = "INSERT INTO `autorizacion`(`autorizacion_Entidad_Id`, `autorizacion_Paciente_Id`, `autorizacion_fecha`, `autorizacion_Estado_Id`) "
                    + "VALUES ('" + autorizacion_Entidad_Id + "', '"+ autorizacion_Paciente_Id + "', '" + autorizacion_Fecha + "', '" + autorizacion_Estado_Id + "')";
-        
-        System.out.println("000000000000000000000000000000000000000000000000000000000000000000000000");
-        System.out.println(sql);
-        System.out.println("000000000000000000000000000000000000000000000000000000000000000000000000");
+
         // Se ejecuta el query concatenado
         ResultSet rs = conexion.ejecutarInsert(sql);
         int id = 0;

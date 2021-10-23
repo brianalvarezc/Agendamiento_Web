@@ -1,3 +1,10 @@
+<%-- 
+    Document   : nuevaAutorizacion
+    Created on : 21/10/2021, 10:35:58 p. m.
+    Author     : AlvarezCuadros
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,7 +24,7 @@
             </div>
             <div class="container"> <!--DIV que contiene el formulario-->
                 <h3>Complete los campos</h3>
-                <form method="GET" action="recibido_Autorizacion.jsp">
+                <form method="POST" action="recibidoAutorizacion.jsp">
                 <!-- Form Name -->
                     <div class="row"> <!--Div de los campos-->
                         <!-- Text input-->
@@ -51,7 +58,7 @@
                     <div class="row">
                         <div align="center">
                             <button>Crear</button>
-                            <button id="Cancelar" name="Cancelar" onclick="window.location.replace('lista_Autorizacion.jsp')">Cancelar</button>
+                            <button id="Cancelar" name="Cancelar" onclick="window.location.replace('listaAutorizacion.jsp')">Cancelar</button>
                         </div>
                     </div>
                 </form>

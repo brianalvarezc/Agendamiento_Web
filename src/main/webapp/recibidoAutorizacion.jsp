@@ -21,6 +21,10 @@
     <title>Nueva Autorizacion</title>
   </head>
     <body>
+
+        <div class="container-fluid p-2 bg-secondary text-white text-center">
+            <h2>Nueva Autorizacion</h2>
+        </div>
         
         <%
         String autorizacion_Paciente_Id = request.getParameter("autorizacion_Paciente_Id");
@@ -37,15 +41,7 @@
         ColeccionAutorizacion cole = new ColeccionAutorizacion();
         boolean guardado = cole.guardarAutorizacion(a);
 
-        %>
-        <!-- Comprobando los datos ingresados 
-        <h2> <%= a.getAutorizacion_Paciente_Id()%> </h2>
-        <h2> <%= a.getAutorizacion_Entidad_Id()%> </h2>
-        <h2> <%= a.getAutorizacion_Fecha()%> </h2>
-        <h2> <%= a.getAutorizacion_Estado_Id()%> </h2> 
-        Comprobando los datos ingresados --> 
-        
-        <%if (guardado){
+        if (guardado){
         %>
             <div class="Container" align="center">
                 <h2>Ingreso creado!</h2>
@@ -56,9 +52,9 @@
             </div>
           <% } %>
               
-        <div class="container" align="center">
-            <a href="lista_Autorizacion.jsp">
-                <button type="button" class="btn-primary"><h4>Volver</h4></button>
+        <div align="center">
+            <a href="listaAutorizacion.jsp">
+                <button type="button">Volver</button>
             </a>
         </div>
     </body>
