@@ -15,24 +15,13 @@ public class Consultorio {
   private String consultorio_Nombre;
   private String consultorio_Ubicacion;
   private int consultorio_Estado_Id;
+  private String consultorio_Estado_Nombre;
   ////////////////////////////////////////////////////////////////////////////
   // Constructores//////////////////////////////////////
 
     public Consultorio() {
     }
 
-    public Consultorio(String consultorio_Nombre, String consultorio_Ubicacion, int consultorio_Estado_Id) {
-        this.consultorio_Nombre = consultorio_Nombre;
-        this.consultorio_Ubicacion = consultorio_Ubicacion;
-        this.consultorio_Estado_Id = consultorio_Estado_Id;
-    }
-
-    public Consultorio(int consultorio_Id, String consultorio_Nombre, String consultorio_Ubicacion, int consultorio_Estado_Id) {
-        this.consultorio_Id = consultorio_Id;
-        this.consultorio_Nombre = consultorio_Nombre;
-        this.consultorio_Ubicacion = consultorio_Ubicacion;
-        this.consultorio_Estado_Id = consultorio_Estado_Id;
-    }
     ////////////////////////////////////////////////////////////////////////////
     // Metodos Get y Set //////////////////////////////////////
 
@@ -67,11 +56,22 @@ public class Consultorio {
     public void setConsultorio_Estado_Id(int consultorio_Estado_Id) {
         this.consultorio_Estado_Id = consultorio_Estado_Id;
     }
+    
+    public String getConsultorio_Estado_Nombre() {
+        return consultorio_Estado_Nombre;
+    }
+
+    public void setConsultorio_Estado_Nombre(String consultorio_Estado_Nombre) {
+        this.consultorio_Estado_Nombre = consultorio_Estado_Nombre;
+    }
+
+    
     ////////////////////////////////////////////////////////////////////////////
     // Metodos de la clase//////////////////////////////////////
     
     
     ////////////////////////////////////////////////////////////////////////////
 
+    
 }
 

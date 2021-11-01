@@ -53,8 +53,11 @@
                             <input id="cita_Medico_Id" name="cita_Medico_Id" type="text" placeholder="-" required="">
                         </div>
                         <div class="row">
-                            <label for="cita_Estado_Id">Id de Estado: </label>
-                            <input id="cita_Estado_Id" name="cita_Estado_Id" type="text" placeholder="-" required="">
+                            <label for="cita_Estado_Id">Estado: </label>
+                             <select id="consultorio_Estado" name="consultorio_Estado" placeholder="-" required="">
+                                <option value="1">Habilitado</option>
+                                <option value="2">Deshabilitado</option>
+                            </select>
                         </div>
                         <div class="row">
                             <label for="cita_Consultorio_Id">Id de Consultorio: </label>

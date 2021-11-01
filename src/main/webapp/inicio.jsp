@@ -43,6 +43,11 @@
                         <input type="button" value="Crear Cita"></input>
                     </a>
                 </div>
+                <div align="center">
+                    <a href="nuevoConsultorio.jsp">
+                        <input type="button" value="Crear Consultorio"></input>
+                    </a>
+                </div>
             <% }else{ %>
                 <h3>Credenciales incorrectas <%= user%> y pass: <%= password%></h3>
             <%}%>

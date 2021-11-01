@@ -40,6 +40,7 @@ public class TestGeneral {
     
     @Test
     public void verificarCreaciondeObjetoDesdeFormulario(){
+        // Para formularion de autorizacion
         String autorizacion_Paciente_Id = "7";
         String autorizacion_Entidad_Id = "1";
         String autorizacion_Fecha = "2020-10-10";
