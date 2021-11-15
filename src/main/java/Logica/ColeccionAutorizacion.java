@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class ColeccionAutorizacion {
     // Se declara el array que contendra la coleccion
     private ArrayList<Autorizacion> lista_autorizaciones;
+    
     // Metodo para devolver la lista para poderla presentar
     public ArrayList<Autorizacion> getLista(){
         return lista_autorizaciones;

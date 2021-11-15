@@ -17,37 +17,68 @@
         <!------ Include the above in your HEAD tag ---------->
     </head>
     <body>
-        
-        <div class="container-fluid p-2 bg-secondary text-white text-center">
-            <h2>Bienvenido</h2>
-        </div>
-        <!-- ---------------- Recibiendo el login ---------------- -->
         <%
         String user = request.getParameter("user");
         String password = request.getParameter("password");
         System.out.println(user + " " + password);
         
         %>
+        <div class="container-fluid p-2 bg-secondary text-white text-center">
+            <h2>Bienvenido: <%= user%></h2>
+        </div>
+        <!-- ---------------- Recibiendo el login ---------------- -->
+
             
-        <div class="container" align="center">
-            <h1>Credenciales</h1> <!-- no hace la comparacion correcta entre lo que sale del formulario y lo que pregunto acá -->
+        <div class="container">
             <% if(("admin").equals(user) && ("123").equals(password)){ %>
-                <h3>Buenvenido: <%= user%></h3>
-                <div align="center">
-                    <a href="nuevaAutorizacion.jsp">
-                        <input type="button" value="Crear Autorizacion"></input>
-                    </a>
+            
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <a href="nuevaAutorizacion.jsp">
+                                <input type="button" value="Crear Autorizacion"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="nuevaCita.jsp">
+                                <input type="button" value="Crear Cita"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="nuevoConsultorio.jsp">
+                                <input type="button" value="Crear Consultorio"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="nuevaEntidad.jsp">
+                                <input type="button" value="Crear Entidad"></input>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="row">
+                            <a href="listaAutorizacion.jsp">
+                                <input type="button" value="Lista Autorizacion"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="listaCita.jsp">
+                                <input type="button" value="Lista Cita"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="listaConsultorio.jsp">
+                                <input type="button" value="Lista Consultorio"></input>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="listaEntidad.jsp">
+                                <input type="button" value="Lista Entidad"></input>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div align="center">
-                    <a href="nuevaCita.jsp">
-                        <input type="button" value="Crear Cita"></input>
-                    </a>
-                </div>
-                <div align="center">
-                    <a href="nuevoConsultorio.jsp">
-                        <input type="button" value="Crear Consultorio"></input>
-                    </a>
-                </div>
+        </div>
             <% }else{ %>
                 <h3>Credenciales incorrectas <%= user%> y pass: <%= password%></h3>
             <%}%>

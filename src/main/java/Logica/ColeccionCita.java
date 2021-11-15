@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class ColeccionCita {
     // Se declara el array que contendra la coleccion
     private ArrayList<Cita> lista_citas;
+    
     // Metodo para devolver la lista para poderla presentar
     public ArrayList<Cita> getLista(){
         return lista_citas;
